@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <img class="logo" src="img/emlogo1.svg" alt="logo">
+            <h1 class="header-title">Welcome to edWebdesign.</h1>
+        </header>
+        <nav>
+            <ul class="top-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <h1 class="main-title">Contact me</h1>
+
+            <body>
+                <div class="flex-container">
+
+                    <form action="contactform.php" method="post">
+                        <input type="text" name="fName" placeholder="First Name">
+                        <input type="text" name="lName" placeholder="Last Name">
+                        <input type="text" name="eMail" placeholder="example@email.com">
+
+                        <select name="question">
+                            <option value="none">Choose errand</option>
+                            <option value="question1">I want a website</option>
+                            <option value="question2">I want to report a bug</option>
+                            <option value="question3">Pricelist</option>
+
+                            <textarea name="message" placeholder="Message..." cols="30" rows="10"></textarea>
+
+                        </select>
+                        <button type="submit" name="submit"> <a
+                                href="mailto:ediz.mehmet@gritacademy.se">Submit</a></button>
+                    </form>
+
+                </div>
+            </body>
+
+    </div>
+    </main>
+
+    <footer>
+        <div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">My projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <div>
+            <a href="https://www.linkedin.com/in/ediz-mehmet-b1240420a/" target="_blank"><i class='fa fa-linkedin'
+                    style="font-size: 2rem;"></i></a>
+            <a href="https://github.com/edzonee/" target="_blank"><i class='fa fa-github'
+                    style="font-size: 2rem;"></i></a>
+
+
+        </div>
+
+        <div>
+            <p class="copyright">eWebdesign © 2021</p>
+
+        </div>
+
+    </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

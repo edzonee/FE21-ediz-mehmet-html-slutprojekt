@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 5rem auto auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(185, 185, 185);
+}
+
+.logo {
+  height: 3rem;
+  margin-right: 30%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+main {
+  /* border: 1px solid #996; */
+  margin: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid pink; */
+}
+
+.flex-item {
+  flex-basis: 30%;
+  padding: 10px;
+  /* border: 1px solid blue; */
+}
+
+.flex-item p {
+  margin-bottom: 1rem;
+}
+
+.flex-item img {
+  min-width: 200px;
+  width: 100%;
+}
+
+.zoom {
+  padding: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+
+.portrait {
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.portrait-small {
+  border-radius: 50%;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: #999 solid 1px;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #999;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  border-top: #999 solid 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*PROJECTS*/
+.slider {
+  width: 500px;
+  height: 300px;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px;
+  background-color: white;
+  height: 300px;
+  clear: both;
+  position: relative;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.flex-item-wide {
+  flex-basis: 70%;
+  padding: 10px;
+  
+}
+
+.flex-item-wide img {
+  min-width: 200px;
+  width: 50%;
+}
+
+.center-img {
+  align-items: center;
+}
+
+.project-img {
+  width: 50px;
+}
+
+/*///PROJECTS END*/
+
+/*ABOUT*/
+
+.flex-item-aslan {
+  flex-basis: 30%;
+  padding: 10px;
+  
+}
+
+.flex-item-aslan img {
+  min-width: 200px;
+  width: 100%;
+}
+
+
+/*CONTACT*/
+
+form {
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: 1px solid rgb(223, 223, 223);
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 20px;
+}
+
+button {
+  width: 40%;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #d2d2d2;
+}
+
+button a:hover {
+  color: black;
+}
+
+/*ABOUT TEXT*/
+
+.about-text p {
+  margin-top: 0px;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 810px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .slider {
+    width: 25em;
+    height: 18em;
+  }
+  .buttons {
+    position: relative;
+    top: -35px;
+  }
+  .logo {
+    height: 2rem;
+    margin-right: 10%;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flex-item {
+    flex-basis: 100%;
+    /* border: 1px solid blue; */
+  }
+  .slider {
+    width: 17em;
+    height: 10em;
+  }
+  .buttons {
+    position: relative;
+    top: -165px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .logo {
+    height: 1.5rem;
+    margin-right: 7%;
+  }
+  
+  
+
+  .main-title {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .top-nav li {
+    border: #999 solid 1px;
+  }
+
+  .top-nav li:hover {
+    background-color: #999;
+  }
+
+  .top-nav a:hover {
+    color: black;
+  }
+
+  ul {
+    border-bottom: none;
+  }
+
+  /*Contact*/
+
+  input {
+    width: 100%;
+    align-items: center;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  /*PROJECTS*/
+
+  
+}
+
+@media (min-width: 375px) {
+  input {
+    width: 95%;
+    align-items: center;
+  }
+
+  textarea {
+    width: 95%;
+    height: 100px;
+  }
+
+  button {
+    width: 45%;
+    justify-content: center;
+  }
+
+  select {
+    width: 95%;
+  }
+}
+/* NO PHONE IS THIS SMALL BUT YOU NEVER KNOW KEKW*/
+@media (max-width: 357px) {
+  h1 {
+    font-size: 18px;
+  }
+}
